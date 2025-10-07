@@ -18,7 +18,8 @@ function initScrollEffects() {
     window.addEventListener('scroll', () => {
         const currentScrollY = window.scrollY;
         
-        if (currentScrollY > 100) {
+        // Activar el efecto de scroll un poco antes para mejor UX
+        if (currentScrollY > 50) {
             header.classList.add('header-scrolled');
         } else {
             header.classList.remove('header-scrolled');
